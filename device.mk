@@ -17,8 +17,9 @@
 # Inherit common device config
 $(call inherit-product, device/xiaomi/mt6765-common/mt6765.mk)
 
-# Permissions
+# Fingerprint
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
 # Inherit proprietary parts
