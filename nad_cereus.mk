@@ -20,6 +20,9 @@ $(call inherit-product, device/xiaomi/cereus/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
+# Official tag
+NAD_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cereus
 PRODUCT_NAME := nad_cereus
