@@ -17,9 +17,12 @@
 # Inherit from device
 $(call inherit-product, device/xiaomi/cereus/device.mk)
 
+# Inherit some common ResurrectionRemix stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cereus
-PRODUCT_NAME := aosp_cereus
+PRODUCT_NAME := rr_cereus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6
 PRODUCT_MANUFACTURER := Xiaomi
